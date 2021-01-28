@@ -490,6 +490,14 @@ class SketchField extends PureComponent {
   toJSON = (propertiesToInclude) => this._fc.toJSON(propertiesToInclude);
 
   /**
+   * Returns SVG representation of canvas
+   *
+   * @param propertiesToInclude Array <optional> Any properties that you might want to additionally include in the output
+   * @returns {string} SVG element output
+   */
+  toSVG = (propertiesToInclude) => this._fc.toSVG(propertiesToInclude);
+
+  /**
    * Populates canvas with data from the specified JSON.
    *
    * JSON format must conform to the one of fabric.Canvas#toDatalessJSON
