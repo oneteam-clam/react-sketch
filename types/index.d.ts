@@ -319,6 +319,14 @@ declare module 'react-sketch-oneteam' {
 		toJSON(propertiesToInclude?: ArrayLike<string>): string
 
 		/**
+		 * Returns JSON representation of canvas
+		 *
+		 * @param propertiesToInclude Array <optional> Any properties that you might want to additionally include in the output
+		 * @returns {string} JSON string
+		 */
+		toSVG(propertiesToInclude?: ArrayLike<string>): string
+
+		/**
 		 * Populates canvas with data from the specified JSON.
 		 *
 		 * JSON format must conform to the one of fabric.Canvas#toDatalessJSON
